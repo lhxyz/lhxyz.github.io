@@ -1,4 +1,12 @@
-# lhxyz.github.io
+<!DOCTYPE HTML>
+<html>
+<body>
 
-<table id="Bq"><tr><td id="stWrap"></td></tr></table><script src="//www.speedtest.cn/assets/js/api/speedtest.light_nobg.min.js">
-</script>
+<video width="320" height="240" controls="controls">
+  <source src="movie.ogg" type="video/ogg">
+  <source src="movie.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
+</body>
+</html>
