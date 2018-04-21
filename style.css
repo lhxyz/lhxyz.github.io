@@ -35,7 +35,7 @@ b, strong {
 }
 
 div {
-    display: none;
+    display: inline;
 }
 
 img,audio {
