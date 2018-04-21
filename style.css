@@ -12,7 +12,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1500px;
     padding: 2em 2em 4em;
 }
 
@@ -34,14 +34,14 @@ b, strong {
     font-weight: 600;
 }
 
-samp {
-    display: none;
+div {
+    display: inline;
 }
 
-img {
+img,audio {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
+    border: 0.10px solid rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     display: block;
     margin: 1.3em auto;
