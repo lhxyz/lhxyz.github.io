@@ -34,11 +34,11 @@ b, strong {
     font-weight: 600;
 }
 
-audio {
+div {
     display: none;
 }
 
-img {
+img, {
     animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
     background: transparent;
     border: 10px solid rgba(0, 0, 0, 0.12);
