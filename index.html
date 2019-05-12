@@ -8,7 +8,27 @@
 </head>
    
     <body>
-        
+<script type="text/javascript">
+window.onload=function(){
+var oPlayer=document.getElementById('player');
+var oBtn=document.getElementById("video-btn");
+var oCurtime=document.getElementById('curtime');
+var oDuration=document.getElementById('duration');
+oDuration.innerHTML=oPlayer.duration;
+oBtn.onclick=function(){
+if(oPlayer.paused){
+oPlayer.play();
+oBtn.value="Pause";
+}else{
+oPlayer.pause();
+oBtn.value="Play";
+}
+};
+setInterval(function(){
+oCurtime.innerHTML=oPlayer.currentTime;
+},250);
+};
+</script>
         <h1>Hello World</h1>
         <h2>I'm hosted with GitHub Pages.</h2>
         
@@ -21,6 +41,13 @@
   <source src="http://other.web.re01.sycdn.kuwo.cn/resource/n3/75/88/1814616326.mp3" type="audio/mpeg" />
 Your browser does not support the audio element.
          </audio>
+                   <div class="video">
+        <audio id="player" src="https://lh-thinkpad.oss-cn-hangzhou.aliyuncs.com/dj.shqh.mp3" ></audio>
+      </div>
+      <div class="controls">
+        <input type="button" value="Play" id="video-btn">
+        <span id="curtime">0</span>/<span id="duration">0</span></div>
+    </div>
        </div>
         <p class="note">
             Today, Brackets only supports Live Preview for HTML and CSS. However, in the current version, changes to
@@ -43,5 +70,6 @@ Your browser does not support the audio element.
         <script src="../bootstrap-4.1.0-dist/jquery-3.3.1.min.js"></script>
         <script src="../bootstrap-4.1.0-dist/popper.min.js"></script>
         <script src="../bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+          
     </body>
 </html>
