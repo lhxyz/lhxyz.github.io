@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8"> 
+      <title>GitHub Pages | https://lhxyz.github.io</title>
+      <link rel="stylesheet" href="../bootstrap-4.1.0-dist/css/bootstrap.min.css">
+</head>
+   
+    <body>
+<script type="text/javascript">
+window.onload=function(){
+var oPlayer=document.getElementById('player');
+var oBtn=document.getElementById("video-btn");
+var oCurtime=document.getElementById('curtime');
+var oDuration=document.getElementById('duration');
+oDuration.innerHTML=oPlayer.duration;
+oBtn.onclick=function(){
+if(oPlayer.paused){
+oPlayer.play();
+oBtn.value="Pause";
+}else{
+oPlayer.pause();
+oBtn.value="Play";
+}
+};
+setInterval(function(){
+oCurtime.innerHTML=oPlayer.currentTime;
+},250);
+};
+</script>
+        <h1>Hello World</h1>
+        <h2>I'm hosted with GitHub Pages.</h2>
+        
+ 
+        <a href="../index.html">
+            <img alt="A screenshot showing CSS Quick Edit" src="../screenshots/quick-edit.png" />
+        </a>
+      <div class="video">
+        <audio id="player" src="li.mp3" ></audio>
+      </div>
+      <div class="controls">
+        <input type="button" value="Play" id="video-btn">
+        <span id="curtime">0</span>/<span id="duration">0</span></div>
+    </div>
+        <p class="note">
+            Today, Brackets only supports Live Preview for HTML and CSS. However, in the current version, changes to
+            JavaScript files are automatically reloaded when you save. We are currently working on Live Preview
+            support for JavaScript. Live previews are also only possible with Google Chrome, but we hope
+            to bring this functionality to all major browsers in the future.
+        </p>
+        
+        
+        <ul>
+            <li><a href="http://brackets.io">Brackets.io</a></li>
+            <li><a href="http://blog.brackets.io">Brackets Team Blog</a></li>
+            <li><a href="https://github.com/adobe/brackets">Brackets on GitHub</a></li>
+            <li><a href="https://brackets-registry.aboutweb.com">Brackets Extension Registry</a></li>
+            <li><a href="https://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
+            <li><a href="https://groups.google.com/forum/#!forum/brackets-dev">Brackets Developer Mailing List</a></li>
+            <li><a href="https://twitter.com/brackets">@brackets on Twitter</a></li>
+            <li>Chat with Brackets developers on IRC in <a href="http://webchat.freenode.net/?channels=brackets&uio=d4">#brackets on Freenode</a></li>
+        </ul>
+        <script src="../bootstrap-4.1.0-dist/jquery-3.3.1.min.js"></script>
+        <script src="../bootstrap-4.1.0-dist/popper.min.js"></script>
+        <script src="../bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+          
+    </body>
+</html>
